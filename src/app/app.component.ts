@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my_site';
+  title = 'Mike\'s Prtfolio';
 
   lnClick() {
 	window.open('https://www.linkedin.com/in/michail-chatzipanagiotou', '_blank')
@@ -21,6 +20,14 @@ export class AppComponent {
 
   trncClick() {
 	window.open('https://github.com/mikechatzis/ft_transcendence', '_blank')
+  }
+
+  prtfioClick() {
+	window.open('https://github.com/mikechatzis/personal-portfolio', '_blank')
+  }
+
+  cntnrsClick() {
+	window.open('https://github.com/mikechatzis/ft_containers', '_blank')
   }
 
   constructor (

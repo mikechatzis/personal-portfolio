@@ -1,11 +1,11 @@
 <div id="maindiv">
 	<div id="top">
-		<h1 id="title">Portfolio</h1>
+		<h1 id="title">My portfolio</h1>
 	</div>
 	<div id="content">
 		<section id="social">
 			<p style="text-align: center; color: rgb(41, 44, 78);
-			text-shadow: 1px 1px 10px rgb(117, 125, 141);">Hello world, my name is Michael. Below are all the important links and projects</p>
+			text-shadow: 1px 1px 10px rgb(117, 125, 141); margin-bottom: 10px;">Hello world, my name is Michael. Below are all the important links and projects</p>
 			<div id="icons">
 				<button mat-icon-button id="linkedin" style="color: rgba(53, 53, 215, 0.99);" (click)="lnClick()">
 					<mat-icon svgIcon="linkedin"></mat-icon>
@@ -15,16 +15,17 @@
 				</button>
 			</div>
 		</section>
+		<p class="inText">Some key projects</p>
 		<section class="bot">
 			<mat-card class="projects">
 				<mat-card-header style="margin-left: -20px; margin-bottom: 15px;">
 					<mat-card-title>Transcendence</mat-card-title>
-					<mat-card-subtitle style="margin-left: 5px;">a full stack project</mat-card-subtitle>
+					<mat-card-subtitle style="margin-left: 1px;">a full stack project</mat-card-subtitle>
 				</mat-card-header>
 				<div style="display: flex; justify-content: center;">
-					<img mat-card-image src="../assets/images/pong.png" style="width: 200px; height: 112.5px;">
+					<img mat-card-image class="A" src="../assets/images/pong.png" style="width: 200px; height: 112.5px;">
 				</div>
-				<mat-card-content style="text-align: justify; margin-bottom: 0;">
+				<mat-card-content style="text-align: justify; margin-bottom: 20px;">
 				  <p>
 					The classic Pong game, multiplayer.
 					Compete against your friends and climb the leaderboard.
@@ -44,15 +45,36 @@
 					<mat-card-subtitle style="margin-left: 1px;">this page's source code, done with Angular</mat-card-subtitle>
 				</mat-card-header>
 				<div style="display: flex; justify-content: center;">
-					<img mat-card-image src="../assets/images/portfolio.png" style="width: 200px; height: 112.5px;">
+					<img mat-card-image class="B" src="../assets/images/portfolio.png" style="width: 200px; height: 112.5px;">
 				</div>
-				<mat-card-content style="text-align: justify; margin-bottom: 36.5px;">
+				<mat-card-content style="text-align: justify; margin-bottom: 56.5px;">
 				  <p>
 					Minimalist design, grey scale, trve cvlt vibes.
 				  </p>
 				</mat-card-content>
 				<mat-card-actions style="display: flex; justify-content: center;">
-					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="trncClick()">
+					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="prtfioClick()">
+						View on GitHub
+					</button>
+				</mat-card-actions>
+			  </mat-card>
+
+			  <mat-card class="projects">
+				<mat-card-header style="margin-left: -20px; margin-bottom: 15px;">
+					<mat-card-title>Containers</mat-card-title>
+					<mat-card-subtitle style="margin-left: 1px;">Recreating the C++ STL containers</mat-card-subtitle>
+				</mat-card-header>
+				<div style="display: flex; justify-content: center;">
+					<img mat-card-image class="C" src="../assets/images/vector.png" style="width: 200px; height: 112.5px;">
+				</div>
+				<mat-card-content style="text-align: justify; margin-bottom: 17px;">
+				  <p>
+					A remake of vector, map and stack, complete with their iterators and fully compatible with the STL.
+					Done in a C++98 fashion.
+				  </p>
+				</mat-card-content>
+				<mat-card-actions style="display: flex; justify-content: center;">
+					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="cntnrsClick()">
 						View on GitHub
 					</button>
 				</mat-card-actions>
