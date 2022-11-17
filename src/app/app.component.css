@@ -6,9 +6,10 @@
 
 #top {
 	display: flex;
-	height: 82.5px;
+	flex-direction: column;
+	text-align: center;
+	height: 110px;
 	width: 100%;
-	justify-content: center;
 	box-shadow: 0 8px 6px -6px grey;
 	padding-bottom: 10px;
 }
@@ -16,6 +17,12 @@
 #title {
 	font-size: 56px;
 	margin-top: 35px;
+	color: rgb(38, 63, 55);
+	text-shadow: 1px 1px 10px rgb(117, 125, 141);
+}
+
+#subtitle {
+	font-size: 26px;
 	color: rgb(38, 63, 55);
 	text-shadow: 1px 1px 10px rgb(117, 125, 141);
 }
