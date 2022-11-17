@@ -5,7 +5,8 @@
 	<div id="content">
 		<section id="social">
 			<p style="text-align: center; color: rgb(41, 44, 78);
-			text-shadow: 1px 1px 10px rgb(117, 125, 141); margin-bottom: 10px;">Hello world, my name is Michael. Below are all the important links and projects</p>
+			text-shadow: 1px 1px 10px rgb(117, 125, 141); margin-bottom: 10px;">Hello world, my name is Michael.
+			I like all things grey, RPGs, good music and solving problems.<br>Below are all my first steps in the world of coding/webDev.</p>
 			<div id="icons">
 				<button mat-icon-button id="linkedin" style="color: rgba(53, 53, 215, 0.99);" (click)="lnClick()"
 						matTooltip="jump to linkedin profile"
@@ -87,6 +88,69 @@
 				</mat-card-content>
 				<mat-card-actions style="display: flex; justify-content: center;">
 					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="cntnrsClick()">
+						View on GitHub
+					</button>
+				</mat-card-actions>
+			  </mat-card>
+		</section>
+
+		<section class="bot">
+			<mat-card class="projects">
+				<mat-card-header style="margin-left: -20px; margin-bottom: 15px;">
+					<mat-card-title>Cub3d</mat-card-title>
+					<mat-card-subtitle style="margin-left: 1px;">A raycaster in the vein of Wolfenstein3d</mat-card-subtitle>
+				</mat-card-header>
+				<div style="display: flex; justify-content: center;">
+					<img mat-card-image class="A" src="../assets/images/cub.png" style="width: 200px; height: 112.5px;">
+				</div>
+				<mat-card-content style="text-align: justify; margin-bottom: 20px;">
+				  <p>
+					Navigate a 3d maze built from a given map file in this introduction to raycasting.
+					Image taken from cclaude42's GitHub.
+				  </p>
+				</mat-card-content>
+				<mat-card-actions style="display: flex; justify-content: center;">
+					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="cubClick()">
+						View on GitHub
+					</button>
+				</mat-card-actions>
+			  </mat-card>
+
+			  <mat-card class="projects">
+				<mat-card-header style="margin-left: -20px; margin-bottom: 15px;">
+					<mat-card-title>Minishell</mat-card-title>
+					<mat-card-subtitle style="margin-left: 1px;">A program mimicking bash.</mat-card-subtitle>
+				</mat-card-header>
+				<div style="display: flex; justify-content: center;">
+					<img mat-card-image class="B" src="../assets/images/bash.png" style="width: 200px; height: 112.5px;">
+				</div>
+				<mat-card-content style="text-align: justify; margin-bottom: 0px;">
+				  <p>
+					looks like bash, it feels like bash. Execute any command and pipe, with fove of them built in and the rest pulled straight from your system's /bin folder.
+				  </p>
+				</mat-card-content>
+				<mat-card-actions style="display: flex; justify-content: center;">
+					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="shellClick()">
+						View on GitHub
+					</button>
+				</mat-card-actions>
+			  </mat-card>
+
+			  <mat-card class="projects">
+				<mat-card-header style="margin-left: -20px; margin-bottom: 15px;">
+					<mat-card-title>Minitalk</mat-card-title>
+					<mat-card-subtitle style="margin-left: 1px;">Using UNIX signals to transmit data.</mat-card-subtitle>
+				</mat-card-header>
+				<div style="display: flex; justify-content: center;">
+					<img mat-card-image class="C" src="../assets/images/signals.png" style="width: 200px; height: 112.5px;">
+				</div>
+				<mat-card-content style="text-align: justify; margin-bottom: 17px;">
+				  <p>
+					Two programs, one Client and one Server, send/receive a string of characters with the use of Signals. Effective, yet slow.
+				  </p>
+				</mat-card-content>
+				<mat-card-actions style="display: flex; justify-content: center;">
+					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="talkClick()">
 						View on GitHub
 					</button>
 				</mat-card-actions>
