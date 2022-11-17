@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { MatIconRegistry } from '@angular/material/icon';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my_site';
+
+  lnClick() {
+	window.open('https://www.linkedin.com/in/michail-chatzipanagiotou', '_blank')
+  }
+
+  ghClick() {
+	window.open('https://github.com/mikechatzis', '_blank')
+  }
+
+  trncClick() {
+	window.open('https://github.com/mikechatzis/ft_transcendence', '_blank')
+  }
+
+  constructor (
+	private domSanitizer: DomSanitizer,
+	private matIconregistry: MatIconRegistry,
+  ) {
+	this.matIconregistry.addSvgIcon('linkedin', 
+		this.domSanitizer.bypassSecurityTrustResourceUrl(('../../assets/images/SVG/linkedin.svg')))
+	this.matIconregistry.addSvgIcon('github', 
+		this.domSanitizer.bypassSecurityTrustResourceUrl(('../../assets/images/SVG/github.svg')))
+  }
 }
