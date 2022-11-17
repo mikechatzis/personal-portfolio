@@ -64,6 +64,7 @@
 	color: grey;
 }
 
+
 #linkedin {
 	width: 100px!important;
 	height: 100px!important;
@@ -72,6 +73,16 @@
 #github {
 	width: 100px!important;
 	height: 100px!important;
+}
+
+#cv {
+	opacity: 1;
+	width: 100px!important;
+	height: 100px!important;
+}
+
+#cv :hover {
+	opacity: 0.6;
 }
 
 mat-icon {

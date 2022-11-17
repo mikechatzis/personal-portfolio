@@ -7,10 +7,22 @@
 			<p style="text-align: center; color: rgb(41, 44, 78);
 			text-shadow: 1px 1px 10px rgb(117, 125, 141); margin-bottom: 10px;">Hello world, my name is Michael. Below are all the important links and projects</p>
 			<div id="icons">
-				<button mat-icon-button id="linkedin" style="color: rgba(53, 53, 215, 0.99);" (click)="lnClick()">
+				<button mat-icon-button id="linkedin" style="color: rgba(53, 53, 215, 0.99);" (click)="lnClick()"
+						matTooltip="jump to linkedin profile"
+						matTooltipPosition="right">
 					<mat-icon svgIcon="linkedin"></mat-icon>
 				</button>
-				<button mat-icon-button id="github" style="color: white;" (click)="ghClick()">
+
+				<button mat-icon-button id="cv"
+						(click)="downloadCV()"
+						matTooltip="download resume"
+						matTooltipPosition="left">
+					<mat-icon svgIcon="cv"></mat-icon>
+				</button>
+
+				<button mat-icon-button id="github" style="color: white;" (click)="ghClick()"
+						matTooltip="jump to GitHub"
+						matTooltipPosition="left">
 					<mat-icon svgIcon="github"></mat-icon>
 				</button>
 			</div>
