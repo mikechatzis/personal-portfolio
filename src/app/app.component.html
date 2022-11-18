@@ -1,7 +1,7 @@
 <div id="maindiv">
 	<div id="top">
 		<h1 id="title">Michail Chatzipanagiotou</h1>
-		<h2 id="subtitle">Programmer, WebDev</h2>
+		<h2 id="subtitle">Junior programmer, WebDev</h2>
 	</div>
 	<div id="content">
 		<section id="social">
@@ -22,7 +22,7 @@
 					<mat-icon svgIcon="cv"></mat-icon>
 				</button>
 
-				<button mat-icon-button id="github" style="color: white;" (click)="ghClick()"
+				<button mat-icon-button id="github" style="color: white;" (click)="ghClick('')"
 						matTooltip="jump to GitHub"
 						matTooltipPosition="left">
 					<mat-icon svgIcon="github"></mat-icon>
@@ -31,6 +31,7 @@
 		</section>
 		<p class="inText">Some key projects</p>
 		<section class="bot">
+
 			<mat-card class="projects">
 				<mat-card-header style="margin-left: -20px; margin-bottom: 15px;">
 					<mat-card-title>Transcendence</mat-card-title>
@@ -47,7 +48,7 @@
 				  </p>
 				</mat-card-content>
 				<mat-card-actions style="display: flex; justify-content: center;">
-					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="trncClick()">
+					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="ghClick('/ft_transcendence')">
 						View on GitHub
 					</button>
 				</mat-card-actions>
@@ -61,13 +62,13 @@
 				<div style="display: flex; justify-content: center;">
 					<img mat-card-image class="B" src="../assets/images/portfolio.png" style="width: 200px; height: 112.5px;">
 				</div>
-				<mat-card-content style="text-align: justify; margin-bottom: 40px;">
+				<mat-card-content style="text-align: justify; margin-bottom: 20px;">
 				  <p>
-					Minimalist design, grey scale, trve cvlt vibes, and ofc, no photo of me.
+					Minimal design, grey scale, trve cvlt vibes, and ofc, no photo. Designed 100% by me, no stack overflow copy-paste involved.
 				  </p>
 				</mat-card-content>
 				<mat-card-actions style="display: flex; justify-content: center;">
-					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="prtfioClick()">
+					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="ghClick('/personal-portfolio')">
 						View on GitHub
 					</button>
 				</mat-card-actions>
@@ -88,7 +89,7 @@
 				  </p>
 				</mat-card-content>
 				<mat-card-actions style="display: flex; justify-content: center;">
-					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="cntnrsClick()">
+					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="ghClick('/ft_containers')">
 						View on GitHub
 					</button>
 				</mat-card-actions>
@@ -111,7 +112,7 @@
 				  </p>
 				</mat-card-content>
 				<mat-card-actions style="display: flex; justify-content: center;">
-					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="cubClick()">
+					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="ghClick('/cub3d')">
 						View on GitHub
 					</button>
 				</mat-card-actions>
@@ -127,11 +128,11 @@
 				</div>
 				<mat-card-content style="text-align: justify; margin-bottom: 0px;">
 				  <p>
-					looks like bash, it feels like bash. Execute any command and pipe, with fove of them built in and the rest pulled straight from your system's /bin folder.
+					looks like bash, it feels like bash. Execute any command and pipe, with five of them built in and the rest pulled straight from your system's /bin folder.
 				  </p>
 				</mat-card-content>
 				<mat-card-actions style="display: flex; justify-content: center;">
-					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="shellClick()">
+					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="ghClick('/Minishell')">
 						View on GitHub
 					</button>
 				</mat-card-actions>
@@ -151,7 +152,7 @@
 				  </p>
 				</mat-card-content>
 				<mat-card-actions style="display: flex; justify-content: center;">
-					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="talkClick()">
+					<button mat-button class="trnscButton" style="color: rgb(137, 136, 136); background-color: rgba(0, 0, 0, 0.9);" (click)="ghClick('/minitalk')">
 						View on GitHub
 					</button>
 				</mat-card-actions>

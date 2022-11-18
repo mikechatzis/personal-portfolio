@@ -1,133 +1,287 @@
-#maindiv {
-	height: 100%;
-	width: 100%;
-	position: relative;
+@media (min-width: 320px) and (max-width: 999px){
+	
+	#maindiv {
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+
+	img {
+		transform: scale(0.8);
+	}
+
+	.mat-icon {
+		transform: scale(0.8);
+	}
+
+	.mat-card-subtitle {
+		font-size: 10px;
+	}
+	
+	#top {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		height: 110px;
+		width: 100%;
+		box-shadow: 0 8px 6px -6px grey;
+		padding-bottom: 10px;
+	}
+	
+	#title {
+		font-size: 36px;
+		margin-top: 35px;
+		color: rgb(38, 63, 55);
+		text-shadow: 1px 1px 10px rgb(117, 125, 141);
+	}
+	
+	#subtitle {
+		font-size: 16px;
+		color: rgb(38, 63, 55);
+		text-shadow: 1px 1px 10px rgb(117, 125, 141);
+	}
+	
+	.inText {
+		display: flex;
+		height: 82.5px;
+		width: 100%;
+		justify-content: center;
+		box-shadow: 0 8px 6px -6px grey;
+	
+		font-size: 10px;
+		margin-bottom: 10px;
+		padding-bottom: 15px;
+		color: rgb(38, 63, 55);
+		text-shadow: 1px 1px 10px rgb(117, 125, 141);
+	}
+	
+	#content {
+		display: flex;
+		flex-direction: column;
+		height: 25%;
+		width: 100%;
+	}
+	
+	#social {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		font-size: 10px;
+	
+	}
+	
+	#icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	
+	#linkedin :hover {
+		color: rgb(0, 8, 163);
+	}
+	
+	#github :hover {
+		color: grey;
+	}
+	
+	
+	#linkedin {
+		width: 80px!important;
+		height: 80px!important;
+	}
+	
+	#github {
+		width: 80px!important;
+		height: 80px!important;
+	}
+	
+	#cv {
+		opacity: 1;
+		width: 80px!important;
+		height: 80px!important;
+	}
+	
+	#cv :hover {
+		opacity: 0.6;
+	}
+	
+	mat-icon {
+		width: 80px;
+		height: 80px;
+	}
+	
+	
+	.bot {
+		display: inline-flex;
+		justify-content: space-evenly;
+		margin: 0px 50px 0px 50px;
+	
+	}
+	.projects {
+		width: 300px;
+		height: 330px;
+		background-color: rgba(31, 31, 31, 0.6);
+		margin: 10px 10px 10px 10px;
+	}
+	
+	.mat-card-content {
+		font-size: 10px!important;
+		margin-bottom: 10px!important;
+	}
+	
+	.projects img {
+		transition: 0.5s all ease-in-out;
+	}
+	
+	.A:hover {
+		z-index: 10;
+		transform: translate(100%, -50%) scale(5);
+	}
+	
+	.B:hover {
+		z-index: 10;
+		transform: translate(0, -50%) scale(5);
+	}
+	
+	.C:hover {
+		z-index: 10;
+		transform: translate(-100%, -50%) scale(5);
+	}
 }
 
-#top {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	height: 110px;
-	width: 100%;
-	box-shadow: 0 8px 6px -6px grey;
-	padding-bottom: 10px;
+@media (min-width: 1000px) {
+	#maindiv {
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+	
+	#top {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		height: 110px;
+		width: 100%;
+		box-shadow: 0 8px 6px -6px grey;
+		padding-bottom: 10px;
+	}
+	
+	#title {
+		font-size: 56px;
+		margin-top: 35px;
+		color: rgb(38, 63, 55);
+		text-shadow: 1px 1px 10px rgb(117, 125, 141);
+	}
+	
+	#subtitle {
+		font-size: 26px;
+		color: rgb(38, 63, 55);
+		text-shadow: 1px 1px 10px rgb(117, 125, 141);
+	}
+	
+	.inText {
+		display: flex;
+		height: 82.5px;
+		width: 100%;
+		justify-content: center;
+		box-shadow: 0 8px 6px -6px grey;
+	
+		font-size: 30px;
+		margin-bottom: 10px;
+		padding-bottom: 15px;
+		color: rgb(38, 63, 55);
+		text-shadow: 1px 1px 10px rgb(117, 125, 141);
+	}
+	
+	#content {
+		display: flex;
+		flex-direction: column;
+		height: 25%;
+		width: 100%;
+	}
+	
+	#social {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	
+	}
+	
+	#icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	
+	#linkedin :hover {
+		color: rgb(0, 8, 163);
+	}
+	
+	#github :hover {
+		color: grey;
+	}
+	
+	
+	#linkedin {
+		width: 100px!important;
+		height: 100px!important;
+	}
+	
+	#github {
+		width: 100px!important;
+		height: 100px!important;
+	}
+	
+	#cv {
+		opacity: 1;
+		width: 100px!important;
+		height: 100px!important;
+	}
+	
+	#cv :hover {
+		opacity: 0.6;
+	}
+	
+	mat-icon {
+		width: 80px;
+		height: 80px;
+	}
+	
+	
+	.bot {
+		display: inline-flex;
+		justify-content: space-evenly;
+		margin: 0px 50px 0px 50px;
+	
+	}
+	.projects {
+		width: 300px;
+		height: 330px;
+		background-color: rgba(31, 31, 31, 0.6);
+		margin: 10px 10px 10px 10px;
+	}
+	
+	
+	.projects img {
+		transition: 0.5s all ease-in-out;
+	}
+	
+	.A:hover {
+		z-index: 10;
+		transform: translate(100%, -50%) scale(5);
+	}
+	
+	.B:hover {
+		z-index: 10;
+		transform: translate(0, -50%) scale(5);
+	}
+	
+	.C:hover {
+		z-index: 10;
+		transform: translate(-100%, -50%) scale(5);
+	}
 }
-
-#title {
-	font-size: 56px;
-	margin-top: 35px;
-	color: rgb(38, 63, 55);
-	text-shadow: 1px 1px 10px rgb(117, 125, 141);
-}
-
-#subtitle {
-	font-size: 26px;
-	color: rgb(38, 63, 55);
-	text-shadow: 1px 1px 10px rgb(117, 125, 141);
-}
-
-.inText {
-	display: flex;
-	height: 82.5px;
-	width: 100%;
-	justify-content: center;
-	box-shadow: 0 8px 6px -6px grey;
-
-	font-size: 30px;
-	margin-bottom: 10px;
-	padding-bottom: 15px;
-	color: rgb(38, 63, 55);
-	text-shadow: 1px 1px 10px rgb(117, 125, 141);
-}
-
-#content {
-	display: flex;
-	flex-direction: column;
-	height: 25%;
-	width: 100%;
-}
-
-#social {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-top: 10px;
-	margin-bottom: 5px;
-
-}
-
-#icons {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
-
-#linkedin :hover {
-	color: rgb(0, 8, 163);
-}
-
-#github :hover {
-	color: grey;
-}
-
-
-#linkedin {
-	width: 100px!important;
-	height: 100px!important;
-}
-
-#github {
-	width: 100px!important;
-	height: 100px!important;
-}
-
-#cv {
-	opacity: 1;
-	width: 100px!important;
-	height: 100px!important;
-}
-
-#cv :hover {
-	opacity: 0.6;
-}
-
-mat-icon {
-	width: 80px;
-	height: 80px;
-}
-
-
-.bot {
-	display: inline-flex;
-	justify-content: space-evenly;
-	margin: 0px 50px 0px 50px;
-
-}
-.projects {
-	width: 300px;
-	height: 330px;
-	background-color: rgba(31, 31, 31, 0.6);
-	margin: 10px 10px 10px 10px;
-}
-
-
-.projects img {
-	transition: 0.5s all ease-in-out;
-}
-
-.A:hover {
-	z-index: 10;
-	transform: translate(100%, -50%) scale(5);
-}
-
-.B:hover {
-	z-index: 10;
-    transform: translate(0, -50%) scale(5);
-}
-
-.C:hover {
-	z-index: 10;
-    transform: translate(-100%, -50%) scale(5);
-}
-

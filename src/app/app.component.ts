@@ -14,33 +14,10 @@ export class AppComponent {
 	window.open('https://www.linkedin.com/in/michail-chatzipanagiotou', '_blank')
   }
 
-  ghClick() {
-	window.open('https://github.com/mikechatzis', '_blank')
+  ghClick(ghLink: string) {
+	window.open('https://github.com/mikechatzis' + ghLink, '_blank')
   }
 
-  trncClick() {
-	window.open('https://github.com/mikechatzis/ft_transcendence', '_blank')
-  }
-
-  prtfioClick() {
-	window.open('https://github.com/mikechatzis/personal-portfolio', '_blank')
-  }
-
-  cntnrsClick() {
-	window.open('https://github.com/mikechatzis/ft_containers', '_blank')
-  }
-
-  cubClick() {
-	window.open('https://github.com/mikechatzis/cub3d', '_blank')
-  }
-
-  shellClick() {
-	window.open('https://github.com/mikechatzis/Minishell', '_blank')
-  }
-
-  talkClick() {
-	window.open('https://github.com/mikechatzis/minitalk', '_blank')
-  }
 
   downloadCV() {
 		const link = document.createElement('a');
