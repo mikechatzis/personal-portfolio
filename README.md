@@ -2,7 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
 
-Run npm install in the root dir to install dependancies.
+## Package install
+
+Run `npm install` in the root dir to install dependancies.
 
 ## Development server
 
