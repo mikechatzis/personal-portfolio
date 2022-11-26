@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon'
 import {MatTooltipModule} from '@angular/material/tooltip';
 
 import { HttpClientModule } from '@angular/common/http';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
 	MatIconModule,
 	MatTooltipModule,
 	HttpClientModule,
+	LandingPageComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

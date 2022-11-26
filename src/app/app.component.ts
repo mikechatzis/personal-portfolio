@@ -1,14 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Mike\'s Prtfolio';
+
+  ngOnInit(): void {
+	AOS.init({
+		mirror: true
+	  })
+  }
 
   lnClick() {
 	window.open('https://www.linkedin.com/in/michail-chatzipanagiotou', '_blank')
